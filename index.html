@@ -34,96 +34,29 @@
         <button class="search-btn">Search</button>
       </div>
       <div class="sort-section">
-        <button class="sort">Sort by date (oldest to latest)</button>
-        <button class="sort">Sort by rating (Least to most)</button>
+        <button class="sort" id="sortByDate">Sort by date (oldest to latest)</button>
+        <button class="sort" id="sortByRating">Sort by rating (Least to most)</button>
       </div>
     </section>
     <section class="movie-section">
       <div class="tabs">
-        <button class="tab tabs-all">All</button>
+        <button class="tab tabs-all" >All</button>
         <button class="tab tabs-fav">Favorites</button>
       </div>
       <div class="movie-card">
-        <div class="card">
-          <img src="/movie-img.png" class="movie-img" />
-          <h3 class="movie-title">Movie-title</h3>
+        <div class="card" id="card" style="display: none;">
+          <img src="" id="movieImg" class="movie-img" />
+          <h3 class="movie-title" id="movieTitle"></h3>
           <div class="votes">
             <div class="">
-              <p>votes: vote-count</p>
-              <p>Rating: vote-average</p>
+              <p id="votesCount"></p>
+              <p id="votesAverage"></p>
             </div>
             <div class="fav-icon">
               <i class="fa-regular fa-heart"></i>
             </div>
           </div>
         </div>
-        <div class="card">
-          <img src="/movie-img.png" class="movie-img" />
-          <h3 class="movie-title">Movie-title</h3>
-          <div class="votes">
-            <div class="">
-              <p>votes: vote-count</p>
-              <p>Rating: vote-average</p>
-            </div>
-            <div class="fav-icon">
-              <i class="fa-regular fa-heart"></i>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <img src="/movie-img.png" class="movie-img" />
-          <h3 class="movie-title">Movie-title</h3>
-          <div class="votes">
-            <div class="">
-              <p>votes: vote-count</p>
-              <p>Rating: vote-average</p>
-            </div>
-            <div class="fav-icon">
-              <i class="fa-regular fa-heart"></i>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <img src="/movie-img.png" class="movie-img" />
-          <h3 class="movie-title">Movie-title</h3>
-          <div class="votes">
-            <div class="">
-              <p>votes: vote-count</p>
-              <p>Rating: vote-average</p>
-            </div>
-            <div class="fav-icon">
-              <i class="fa-regular fa-heart"></i>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <img src="/movie-img.png" class="movie-img" />
-          <h3 class="movie-title">Movie-title</h3>
-          <div class="votes">
-            <div class="">
-              <p>votes: vote-count</p>
-              <p>Rating: vote-average</p>
-            </div>
-            <div class="fav-icon">
-              <i class="fa-regular fa-heart"></i>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <img src="/movie-img.png" class="movie-img" />
-          <h3 class="movie-title">Movie-title</h3>
-          <div class="votes">
-            <div class="">
-              <p>votes: vote-count</p>
-              <p>Rating: vote-average</p>
-            </div>
-            <div class="fav-icon">
-              <i class="fa-regular fa-heart"></i>
-            </div>
-          </div>
-        </div>
-       
-       
       </div>
       <div class="paginations">
         <button class="paginations-btn">Previous</button>
@@ -132,7 +65,8 @@
       </div>
     </section>
     <footer>
-        <p>© 2023 Movie Deck</p>
+      <p>© 2023 Movie Deck</p>
     </footer>
+    <script src="/index.js"></script>
   </body>
 </html>

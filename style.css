@@ -116,9 +116,13 @@ footer {
   background-color: var(--main-color);
   padding: 1rem;
 }
-footer p{
+footer p {
   text-align: center;
   font-size: 1.4rem;
   color: #fff;
   font-family: var(--font-family);
+}
+
+.color-fav {
+  color: #ff0000;
 }

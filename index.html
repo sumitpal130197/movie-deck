@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Movie Deck</title>
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
@@ -28,23 +28,28 @@
       <div class="search-section">
         <input
           class="search-input"
+          id="searchInput"
           type="text"
           placeholder="Search by name..."
         />
-        <button class="search-btn">Search</button>
+        <button class="search-btn" id="searchButton">Search</button>
       </div>
       <div class="sort-section">
-        <button class="sort" id="sortByDate">Sort by date (oldest to latest)</button>
-        <button class="sort" id="sortByRating">Sort by rating (Least to most)</button>
+        <button class="sort" id="sortByDate">
+          Sort by date (oldest to latest)
+        </button>
+        <button class="sort" id="sortByRating">
+          Sort by rating (Least to most)
+        </button>
       </div>
     </section>
     <section class="movie-section">
       <div class="tabs">
-        <button class="tab tabs-all" >All</button>
-        <button class="tab tabs-fav">Favorites</button>
+        <button class="tab tabs-all" id="all-movie">All</button>
+        <button class="tab tabs-fav" id="fav-movie">Favorites</button>
       </div>
       <div class="movie-card">
-        <div class="card" id="card" style="display: none;">
+        <div class="card" id="card" style="display: none">
           <img src="" id="movieImg" class="movie-img" />
           <h3 class="movie-title" id="movieTitle"></h3>
           <div class="votes">
@@ -53,15 +58,19 @@
               <p id="votesAverage"></p>
             </div>
             <div class="fav-icon">
-              <i class="fa-regular fa-heart"></i>
+              <i
+                class="fa-regular fa-heart"
+                id="favoriteBtn"
+                data-movie-id=""
+              ></i>
             </div>
           </div>
         </div>
       </div>
       <div class="paginations">
-        <button class="paginations-btn">Previous</button>
-        <button class="paginations-btn">Current Page: 1</button>
-        <button class="paginations-btn">Next</button>
+        <button class="paginations-btn" id="prevPage">Previous</button>
+        <button class="paginations-btn" id="currentPage"></button>
+        <button class="paginations-btn" id="nextPage">Next</button>
       </div>
     </section>
     <footer>
